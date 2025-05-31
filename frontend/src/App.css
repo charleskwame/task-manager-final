@@ -1,0 +1,4 @@
+.editDialog::backdrop {
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark backdrop */
+	backdrop-filter: blur(20px);
+}
