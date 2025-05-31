@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import { TaskContentsProvider } from "./context/context";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import NotFound from "./pages/NotFound";
 import "./pages/Dashboard";
 import "./pages/Register";
 import "./pages/Layout";
@@ -23,6 +24,7 @@ function App() {
 							<Route path="/register" element={<Register />} />
 							<Route path="/login" element={<Login />} />
 							<Route path="/dashboard" element={<Dashboard />} />
+							<Route path="*" element={<NotFound />} />
 						</Route>
 					</Routes>
 				</Router>
