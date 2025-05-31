@@ -35,10 +35,13 @@ function Register() {
 			setIsLoading(true);
 			try {
 				// creating a post request to the node js server
-				const response = await axios.post("http://localhost:5000/register", {
-					username: formData.userName,
-					password: formData.password,
-				});
+				const response = await axios.post(
+					"https://task-manager-server-ivory-five.vercel.app/register",
+					{
+						username: formData.userName,
+						password: formData.password,
+					},
+				);
 
 				// storing data in localStorage
 				localStorage.setItem("token", response.data.token);
