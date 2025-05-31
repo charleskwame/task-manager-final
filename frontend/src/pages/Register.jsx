@@ -9,6 +9,7 @@ import { TaskContexts } from "../context/context";
 import { useContext } from "react";
 
 function Register() {
+	const { setIsAuthorized } = useContext(TaskContexts);
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState("");
 	const [formData, setFormData] = useState({

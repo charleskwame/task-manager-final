@@ -6,8 +6,10 @@ import { useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { useContext } from "react";
+import { TaskContexts } from "../context/context";
 
 function Login() {
+	const { setIsAuthorized } = useContext(TaskContexts);
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState("");
 	const [formData, setFormData] = useState({
@@ -46,6 +48,7 @@ function Login() {
 				axios.defaults.headers.common["Authorization"] = `Bearer ${response.data.token}`;
 
 				toast.success("Log in success");
+				setIsAuthorized(true);
 				navigate("/dashboard");
 			} catch (error) {
 				setError(error.response?.data?.message || "Log in failed. Please try again.");

@@ -13,6 +13,7 @@ export const TaskContentsProvider = ({ children }) => {
 	const [taskData, setTaskData] = useState([]);
 	const [priority, setPriority] = useState(null);
 	const [status, setStatus] = useState(null);
+	const [isAuthorized, setIsAuthorized] = useState(false);
 
 	// const [newTask, setNewTask] = useState(null);
 	// fetching tasks
@@ -91,6 +92,8 @@ export const TaskContentsProvider = ({ children }) => {
 				deleteTask,
 				updateTaskDetails,
 				addNewTask,
+				isAuthorized,
+				setIsAuthorized,
 			}}
 		>
 			{children}
