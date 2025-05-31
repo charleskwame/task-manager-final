@@ -1,7 +1,7 @@
 import React from "react";
-import { useState } from "react";
-import Login from "./login";
-import Register from "./Register";
+import "./Login";
+import "./Dashboard";
+import "./Register";
 import { Link } from "react-router";
 import video from "../assets/carsetbackgroundvideo.mp4";
 

@@ -6,6 +6,11 @@ import Dashboard from "./pages/Dashboard";
 import { TaskContentsProvider } from "./context/context";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import "./pages/Dashboard";
+import "./pages/Register";
+import "./pages/Layout";
+import "./pages/Home";
+import "./context/context";
 
 function App() {
 	return (
