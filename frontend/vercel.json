@@ -2,10 +2,10 @@
     "version": 2,
     "builds": [
         {
-            "src": "frontend/**/*.js", // Or your specific entry file
+            "src": "frontend/**/*.js",
             "use": "@vercel/static-build",
             "config": {
-                "distDir": "dist" // Your Vite build output directory
+                "distDir": "dist"
             }
         }
     ],
