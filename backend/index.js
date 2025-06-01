@@ -32,7 +32,7 @@ const users = [];
 app.post("/register", async (req, res) => {
 	// removing the last user from the array to allow for multiple user registrations
 	// not ideal but a temporary solution for the demonstration
-	// users.pop();
+	users.pop();
 	// trying to register the user
 	try {
 		const { username, password } = req.body;

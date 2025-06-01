@@ -25,10 +25,10 @@ function Home() {
 				</h1>
 
 				<div className="flex justify-center gap-5 mt-5">
-					<button className="px-3 py-2 font-semibold transition-all duration-500 ease-in-out lg:px-5 border-1 border-violet-500 hover:bg-violet-200 hover:text-violet-500 text-white bg-violet-500 rounded-md">
+					<button className="py-2 font-semibold transition-all duration-500 ease-in-out px-7 border-1 border-violet-500 hover:bg-violet-200 hover:text-violet-500 text-white bg-violet-500 rounded-md">
 						<Link to="/login">Log In</Link>
 					</button>
-					<button className="px-3 py-2 font-semibold transition-all duration-500 ease-in-out lg:px-5 border-1 border-violet-500 hover:bg-violet-200 hover:text-violet-500 text-white bg-violet-500 rounded-md">
+					<button className="py-2 font-semibold transition-all duration-500 ease-in-out px-7 border-1 border-violet-500 hover:bg-violet-200 hover:text-violet-500 text-white bg-violet-500 rounded-md">
 						<Link to="/register">Register</Link>
 					</button>
 				</div>

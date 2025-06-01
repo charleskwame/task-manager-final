@@ -105,7 +105,7 @@ function Login() {
 						/>
 						<input
 							type="submit"
-							value="Log In"
+							value={isLoading ? "Logging in..." : "Log in"}
 							className="w-full bg-violet-500 text-white font-bold py-2 rounded-md hover:bg-violet-300 transition-all ease-in-out duration-500 cursor-pointer border-1 border-violet-500"
 						/>
 						<div className="grid gap-3">

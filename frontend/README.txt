@@ -1,11 +1,23 @@
 Instructions to set-up the application and run locally
 
-1. From your terminal in the folder, 'cd task-manager' - To access the application folder directory
+1. From your terminal , inside the folder, 'cd frontend' - To access the application client folder directory
 
 2. Run 'npm install' - To install all the dependencies
 
-3. Run 'npm run dev' - To start your vite preview server
+3. Run `npm run dev` - To start the local development server
 
 4. Open a new terminal
 
-5. Run 'npm start' - To start your node js server
+5. From your terminal in the folder, 'cd backend' - To access the application backend folder directory
+
+6. Run 'npm install' - To install all the dependencies
+
+7. Run 'npm start' - To start your backend server
+
+8. Open a new terminal
+
+
+Live Demo Hosted On Vercel
+
+https://task-manager-final-client.vercel.app/
+
