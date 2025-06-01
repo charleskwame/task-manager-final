@@ -201,7 +201,7 @@ function Dashboard() {
 								</div>
 								<button
 									type="submit"
-									className="px-4 py-2 mt-2 mb-4 font-semibold text-white transition-all duration-300 rounded-md bg-violet-500 hover:bg-white hover:text-violet-500 border-1 border-violet-500"
+									className="px-4 py-2 mt-2 mb-4 font-semibold text-white transition-all duration-300 rounded-md bg-violet-500 hover:bg-[#f8f8ff] hover:text-violet-500 border-1 border-violet-500"
 								>
 									Save Changes
 								</button>
@@ -311,7 +311,7 @@ function Dashboard() {
 
 								<button
 									type="submit"
-									className="px-4 py-2 mt-2 font-semibold text-white transition-all duration-300 rounded-md bg-violet-500 hover:bg-white hover:text-violet-500 border-1 border-violet-500"
+									className="px-4 py-2 mt-2 font-semibold text-white transition-all duration-300 rounded-md bg-violet-500 hover:bg-[#f8f8ff] hover:text-violet-500 border-1 border-violet-500"
 								>
 									Save New Task
 								</button>
@@ -327,11 +327,11 @@ function Dashboard() {
 							</button>
 						</dialog>
 					) : null}
-					<div className="sticky top-0 flex items-center justify-between py-2 bg-white px-1.5 border-1 border-violet-200">
+					<div className="sticky top-0 flex items-center justify-between py-2 bg-[#f8f8ff] px-1.5 border-1 border-violet-200">
 						<h1 className="font-bold lg:text-xl text-violet-500">CarSet – Luxury Car Rental Platform</h1>
 						<div className="flex items-center gap-5">
 							<button
-								className="px-2 py-1 font-semibold text-white transition-all duration-500 ease-in-out rounded-md cursor-pointer lg:px-4 lg:py-2 border-1 bg-violet-500 hover:text-violet-500 hover:bg-white"
+								className="px-2 py-1 font-semibold text-white transition-all duration-500 ease-in-out rounded-md cursor-pointer lg:px-4 lg:py-2 border-1 bg-violet-500 hover:text-violet-500 hover:bg-[#f8f8ff]"
 								onClick={() => {
 									setAddNewTaskDialog(true);
 								}}
@@ -340,7 +340,7 @@ function Dashboard() {
 							</button>
 
 							<button
-								className="px-2 py-1 font-semibold text-white transition-all duration-500 ease-in-out rounded-md cursor-pointer lg:px-4 lg:py-2 border-1 bg-red-500 hover:text-red-500 hover:bg-white"
+								className="px-2 py-1 font-semibold text-white transition-all duration-500 ease-in-out rounded-md cursor-pointer lg:px-4 lg:py-2 border-1 bg-red-500 hover:text-red-500 hover:bg-[#f8f8ff]"
 								onClick={() => {
 									logOut();
 								}}
@@ -418,7 +418,7 @@ function Dashboard() {
 													className={
 														disableEditAndDeleteButtons[task.id] || task.status === "Completed"
 															? "px-3 py-1 text-gray-500 duration-500 ease-in-out border-gray-200 rounded-md border-1"
-															: "px-3 py-1 text-white duration-500 ease-in-out bg-green-500 border-green-200 rounded-md cursor-pointer border-1 hover:bg-white hover:text-green-500 transtion-all"
+															: "px-3 py-1 text-white duration-500 ease-in-out bg-green-500 border-green-200 rounded-md cursor-pointer border-1 hover:bg-[#f8f8ff] hover:text-green-500 transtion-all"
 													}
 													onClick={() => {
 														updateTaskStatus(task.id);
@@ -436,7 +436,7 @@ function Dashboard() {
 													className={
 														disableEditAndDeleteButtons[task.id] || task.status === "Completed"
 															? "px-3 py-1 text-gray-500 duration-500 ease-in-out border-gray-200 rounded-md border-1"
-															: "px-3 py-1 text-white duration-500 ease-in-out bg-yellow-500 border-yellow-200 rounded-md cursor-pointer border-1 hover:bg-white hover:text-yellow-500 transtion-all"
+															: "px-3 py-1 text-white duration-500 ease-in-out bg-yellow-500 border-yellow-200 rounded-md cursor-pointer border-1 hover:bg-[#f8f8ff] hover:text-yellow-500 transtion-all"
 													}
 													onClick={() => {
 														setIsTaskBeingEdited(true);
@@ -452,7 +452,7 @@ function Dashboard() {
 													className={
 														disableEditAndDeleteButtons[task.id] || task.status === "Completed"
 															? "px-3 py-1 text-gray-500 duration-500 ease-in-out border-gray-200 rounded-md border-1"
-															: "px-3 py-1 text-white duration-500 ease-in-out bg-red-500 border-red-200 rounded-md cursor-pointer border-1 hover:bg-white hover:text-red-500 transtion-all"
+															: "px-3 py-1 text-white duration-500 ease-in-out bg-red-500 border-red-200 rounded-md cursor-pointer border-1 hover:bg-[#f8f8ff] hover:text-red-500 transtion-all"
 													}
 													onClick={() => {
 														deleteTask(task.id);
@@ -495,7 +495,7 @@ function Dashboard() {
 												className={
 													disableEditAndDeleteButtons[task.id] || task.status === "Completed"
 														? "px-3 py-1 text-gray-500 duration-500 ease-in-out border-gray-200 rounded-md border-1"
-														: "px-3 py-1 text-white duration-500 ease-in-out bg-green-500 border-green-200 rounded-md cursor-pointer border-1 hover:bg-white hover:text-green-500 transtion-all"
+														: "px-3 py-1 text-white duration-500 ease-in-out bg-green-500 border-green-200 rounded-md cursor-pointer border-1 hover:bg-[#f8f8ff] hover:text-green-500 transtion-all"
 												}
 												onClick={() => {
 													updateTaskStatus(task.id);
@@ -513,7 +513,7 @@ function Dashboard() {
 												className={
 													disableEditAndDeleteButtons[task.id] || task.status === "Completed"
 														? "px-3 py-1 text-gray-500 duration-500 ease-in-out border-gray-200 rounded-md border-1"
-														: "px-3 py-1 text-white duration-500 ease-in-out bg-yellow-500 border-yellow-200 rounded-md cursor-pointer border-1 hover:bg-white hover:text-yellow-500 transtion-all"
+														: "px-3 py-1 text-white duration-500 ease-in-out bg-yellow-500 border-yellow-200 rounded-md cursor-pointer border-1 hover:bg-[#f8f8ff] hover:text-yellow-500 transtion-all"
 												}
 												onClick={() => {
 													setIsTaskBeingEdited(true);
@@ -529,7 +529,7 @@ function Dashboard() {
 												className={
 													disableEditAndDeleteButtons[task.id] || task.status === "Completed"
 														? "px-3 py-1 text-gray-500 duration-500 ease-in-out border-gray-200 rounded-md border-1"
-														: "px-3 py-1 text-white duration-500 ease-in-out bg-red-500 border-red-200 rounded-md cursor-pointer border-1 hover:bg-white hover:text-red-500 transtion-all"
+														: "px-3 py-1 text-white duration-500 ease-in-out bg-red-500 border-red-200 rounded-md cursor-pointer border-1 hover:bg-[#f8f8ff] hover:text-red-500 transtion-all"
 												}
 												onClick={() => {
 													deleteTask(task.id);

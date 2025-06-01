@@ -74,7 +74,7 @@ function Login() {
 						</p>
 					</div>
 					<form
-						className="border-1 border-violet-200 rounded-md lg:rounded-l-md lg:absolute lg:top-0 lg:right-0 flex flex-col px-3 py-3 lg:py-0 lg:px-5 place-content-center lg:w-[40%] lg:h-screen bg-white shadow-md gap-2"
+						className="border-1 border-violet-200 rounded-md lg:rounded-l-md lg:absolute lg:top-0 lg:right-0 flex flex-col px-3 py-3 lg:py-0 lg:px-5 place-content-center lg:w-[40%] lg:h-screen bg-[#f8f8ff] shadow-md gap-2"
 						onSubmit={handleSubmit}
 					>
 						<h1 className="text-2xl font-bold text-violet-500">Welcome back (Log In)</h1>
@@ -105,12 +105,12 @@ function Login() {
 						<input
 							type="submit"
 							value={isLoading ? "Logging in..." : "Log in"}
-							className="w-full bg-violet-500 text-white font-bold py-2 rounded-md hover:bg-violet-300 transition-all ease-in-out duration-500 cursor-pointer border-1 border-violet-500"
+							className="w-full bg-violet-500 text-white font-bold py-2 rounded-md hover:bg-violet-300 transition-all ease-in-out duration-500 cursor-pointer border-1 border-violet-500 hover:text-violet-500"
 						/>
 						<div className="grid gap-3">
 							<p className="text-sm text-violet-500">Don't have an account?</p>
 							<Link to="/register" className="w-fit">
-								<button className=" bg-violet-300 text-white font-semibold hover:bg-violet-500 border-1 border-violet-500 transion-all ease-in-out duration-500 rounded-md px-6 py-2 cursor-pointer">
+								<button className=" bg-violet-300 text-violet-500 hover:text-white font-semibold hover:bg-violet-500 border-1 border-violet-500 transion-all ease-in-out duration-500 rounded-md px-6 py-2 cursor-pointer">
 									Register
 								</button>
 							</Link>
