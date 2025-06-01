@@ -15,11 +15,10 @@ export const TaskContentsProvider = ({ children }) => {
 	const [status, setStatus] = useState(null);
 	const [isAuthorized, setIsAuthorized] = useState(false);
 
-	// const [newTask, setNewTask] = useState(null);
 	// fetching tasks
 	useEffect(() => {
 		axios
-			.get("https://6838c48a6561b8d882ae2c31.mockapi.io/api/v1/tasks") //the tasks will be customized to the log in user later
+			.get("https://6838c48a6561b8d882ae2c31.mockapi.io/api/v1/tasks")
 			.then((response) => {
 				setTaskData(response.data);
 				setLoadingData(false);

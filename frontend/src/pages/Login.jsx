@@ -53,7 +53,6 @@ function Login() {
 			} catch (error) {
 				setError(error.response?.data?.message || "Log in failed. Please try again.");
 				toast.error("Check your username and password or Register if you don't have an account");
-				console.log(formData);
 			} finally {
 				setIsLoading(false);
 			}
